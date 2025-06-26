@@ -1,0 +1,36 @@
+.product-list-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .columns {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .column {
+    flex: 1;
+  }
+  
+  .card {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .card h4 {
+    margin: 0 0 10px 0;
+  }
+  
+  .buttons button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+
+h2 {
+    text-align: center;
+}
