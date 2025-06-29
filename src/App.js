@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductList from './productlist.jsx'; // Import the ProductList component
+import ProductList from './ProductList.jsx'; // Import the ProductList component
 
 function App() {
   return (
