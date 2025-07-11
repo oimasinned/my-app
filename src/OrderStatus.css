@@ -1,0 +1,30 @@
+.order-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.column {
+    flex: 1;
+}
+
+.columns {
+    display: flex;
+    gap: 20px;
+}
+
+.order-status-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}

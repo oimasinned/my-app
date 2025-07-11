@@ -1,20 +1,33 @@
 import './Navbar.css';
-import { NavLink } from 'react-router-dom';
+import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 
 export default function Navbar () {
     return <nav className="navbar">
         
-        <NavLink to="/" className="site-title">Logix</NavLink>
+        <Link to="/" className="site-title">Logix</Link>
         <ul className="nav-links">
             <li>
-                <NavLink to="/" activeClassName="active">Home</NavLink>
+                <CustomLink to="/">Home</CustomLink>
             </li>
             <li>
-                <NavLink to="/OrderStatus" activeClassName="active">Order Status</NavLink>
+                <CustomLink to="/OrderStatus">Order Status</CustomLink>
             </li>
             <li>
-                <NavLink to="/Login" activeClassName="active">Login</NavLink>
+                <CustomLink to="/Login">Login</CustomLink>
             </li>
         </ul> 
     </nav>
+}
+
+function CustomLink({ to, children, ...props }) {
+    const resolvedPath = useResolvedPath(to);
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+
+    return (
+        <li className={isActive ? "active" : ""}>
+            <Link to={to} {...props}>
+                {children}
+            </Link>
+        </li>
+    );
 }
