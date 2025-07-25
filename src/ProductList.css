@@ -34,3 +34,13 @@
 h2 {
     text-align: center;
 }
+
+.order-button {
+  background-color: darkgrey;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
